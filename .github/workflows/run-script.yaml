@@ -10,5 +10,7 @@ jobs:
     steps:
       - name: Check out the repository to the runner
         uses: actions/checkout@v4
+      - name: Make script executable
+        run: chmod +x my-script.sh
       - name: Run a script
         run: ./my-script.sh
